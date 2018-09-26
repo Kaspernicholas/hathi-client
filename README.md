@@ -18,7 +18,7 @@ need Linux with a GUI, so not the lsde VM images.
 Use the VM http://event.cwi.nl/lsde/surfsara.zip (passwd: osboxes.org) 
 
 This VM has the hathi-client software and this repo and all Linux packages
-menioned below preinstalled, Hadoop and Spark preinstalled and Firefox configured.
+mentioned below preinstalled, Hadoop and Spark preinstalled and Firefox configured.
 
 You can also directly install this software on a Linux or MacOS laptop.
 
