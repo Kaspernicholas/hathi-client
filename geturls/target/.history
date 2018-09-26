@@ -1,0 +1,13 @@
+clean run
+clean 
+run
+package
+vi l
+reload
+run
+package
+. ./r
+vi r
+++2.11.8
+clean
+package

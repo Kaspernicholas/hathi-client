@@ -55,7 +55,7 @@ get_hadoop() {
 }
 
 get_spark() {
-  version=2.1.3
+  version=2.1.1
   url=http://archive.apache.org/dist/spark/spark-$version
   pkg=spark-$version-bin-without-hadoop
   tar="$pkg.tgz"
