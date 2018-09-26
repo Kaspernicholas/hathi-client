@@ -15,7 +15,7 @@ Prerequisites
 
 Windows is not supported so in that case uou need to use Linux in VirtualBox. We 
 need Linux with a GUI, so not the lsde VM images. 
-Use the VM http://event.cwi.nl/lsde/surfsara.zip (passwd: nimda) 
+Use the VM http://event.cwi.nl/lsde/surfsara.zip (passwd: osboxes.org) 
 
 This VM has the hathi-client software and this repo and all Linux packages
 menioned below preinstalled, Hadoop and Spark preinstalled and Firefox configured.
