@@ -95,7 +95,12 @@ session.
 ```
 > kinit <USERNAME>
 ```
-(USERNAME = lsdeXX)
+(USERNAME = lsdeXX) 
+
+If this hangs, then probably your (wifi) network is configured to block
+some ports that Kerberos relies on. Please use VPN software, relocate to
+a coffee place (or home) with less restrictive networking, or use phone 
+thethering to get around this nuisance.
 
 1) Setup the environment:
 ```
