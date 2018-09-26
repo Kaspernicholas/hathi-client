@@ -8,7 +8,7 @@ Please note that Spark 2.1.1 is a relatively old Spark version.
 
 The restriction to Spark 2.1.1 is due to the (non-perfect) configuration of the 
 SurfSara cluster, and the fact that its worker machines only have Java 7. 
-(newer versions of Spark like 2.2.* and beyond require Java 8).
+(newer versions of Spark like 2.2.X and beyond require Java 8).
 
 Prerequisites
 -------------
@@ -34,14 +34,18 @@ Enterprise Linux (Redhat, CentOS, Fedora):
     > yum install wget git java-1.7.0-openjdk krb5-workstation firefox
 ```
 
-Make sure JAVA_HOME points to this Java 7 installation directory.
+Make sure JAVA_HOME points to this Java 7 installation directory. 
+You can also keep using a new java (and scala) environment, but then yiu
+must pass extra compilation flags when building jars, to emit only
+1.76 bytecode. Please see the geturls/build.sbt makefile for these flags.
 
-For MacOS there is no more support or downloads for Java 7, so you must compile 
-with the -target 7 flag (this also holds if you work on Linux with a newer Java).
+For MacOS there is no more support or downloads for Java 7, so you must 
+pass these flags.
 
 Another way to ensure this is to clone your repo on the login.hathi.surfsara.nl
 node, pull your code when you want to run something and compile the jars there 
-(the login node has a Java 7 SDK).
+(the login node has a Java 7 SDK). On the login node you can use the sbt
+installed in /home/pboncz/sbt/bin
 
 
 Local Hadoop and Spark
@@ -149,7 +153,7 @@ Developing
 ----------
 
 To help you get off the ground, there is a geturls/ demo spark application. 
-This program reads a HDFS file (*not* a local file) named landsat_small.ttx and 
+This program reads a HDFS file (*not* a local file) named landsat_small.txt and 
 then downloads the URLs in these, outputting the files in HDFS. By doing this 
 through Spark executors, in parallel, you could download a whole lot of files 
 at the same time and store them all in HDFS.
