@@ -13,7 +13,7 @@ SurfSara cluster, and the fact that its worker machines only have Java 7.
 Prerequisites
 -------------
 
-Windows is not supported so in that case uou need to use Linux in VirtualBox. We 
+Windows is not supported so in that case you need to use Linux in VirtualBox. We 
 need Linux with a GUI, so not the lsde VM images. 
 Use the VM http://event.cwi.nl/lsde/surfsara.zip (passwd: osboxes.org) 
 
@@ -35,9 +35,10 @@ Enterprise Linux (Redhat, CentOS, Fedora):
 ```
 
 Make sure JAVA_HOME points to this Java 7 installation directory. 
-You can also keep using a new java (and scala) environment, but then yiu
-must pass extra compilation flags when building jars, to emit only
-1.76 bytecode. Please see the geturls/build.sbt makefile for these flags.
+You can also keep using a more recent java (and scala) environment, but then 
+you must pass extra compilation flags when building jars, to emit only
+1.7 bytecode. For these flags, please see the geturls/build.sbt makefile:
+(<https://github.com/peterboncz/hathi-client/blob/master/geturls/build.sbt>) 
 
 For MacOS there is no more support or downloads for Java 7, so you must 
 pass these flags.
