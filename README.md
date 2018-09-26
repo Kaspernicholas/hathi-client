@@ -52,12 +52,7 @@ installed in /home/pboncz/sbt/bin
 Local Hadoop and Spark
 ----------------------
 
-In order to develop on your laptop (i.e. not on the cluster, this is required) 
-then you need to install hadoop-2.7 and spark-2.1.1:
-
-The first time you need to download the official Hadoop/Spark software from
-Apache and put the SURFsara configuration in the right location. We provide a
-helper script that will do this automatically:
+In order to develop on your laptop (i.e. not on the cluster), and this is required, then you need to install hadoop-2.7 and spark-2.1.1:
 
 ```
 > git clone --depth 1 https://github.com/peterboncz/hathi-client
